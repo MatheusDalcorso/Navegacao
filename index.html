@@ -10,46 +10,139 @@
         
             <link rel="stylesheet" href="css/style.css">
     </head>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="Bootstrap" width="50"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+    
+    <body class="bg-black">
+        <nav class="navbar navbar-expand-lg  bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/"><img src="imgs/logo.png" alt="Bootstrap" width="50"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Filmes
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/filmes">Página de filmes</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/filmes/americanos">Americanos</a></li>
+                      <li><a class="dropdown-item" href="/filmes/brasileiros">Brasileiros</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Séries
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/series">Página de séries</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/series/animes">Animes</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <body>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 
-        <h1>Index principal do projeto</h1>
-        
+        <!-- <h1>Index principal do projeto</h1> -->
+
+        <div class="container-fluid bg-dark text-white">
+            <div class="row mt-3 ">
+
+                <div class="col-3 bg-black">
+                    <div class="list-group list-group-flush">
+                        <a href="/" class="list-group-item list-group-item-action active list-group-item-dark" aria-current="true">
+                          Home
+                        </a>
+                        <a href="/filmes" class="list-group-item list-group-item-action list-group-item-dark">Filmes</a>
+                        <a href="/series" class="list-group-item list-group-item-action list-group-item-dark">Séries</a>
+                        
+                      </div>
+                </div>
+
+                <div class="col-9 bg-dark">
+                    <h1 class="text-center text-gold">Conheça mais sobre os filmes e séries mundiais</h1>
+                    <div class="row mt-1 justify-content-evenly">
+
+                        <h2 class="display-6">Filmes americanos</h2>
+
+                        <div class="col-2">
+                            <div class="card ">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bHwIzQrbJKiFwArLLngS1Ej6xPc.jpg" class="card-img-top" alt="capa do filme O Bom, O Mau e o Vilão (1966) ">
+                                <div class="card-body">
+                                  <h5 class="card-title">O Bom, O Mau e o Vilão (1966)</h5>
+                                  <a href="/filmes/americanos/O_Bom_O_Mau_e_o_Vilao.html" class="btn btn-outline-gold w-100">Saiba mais</a>
+                                </div>
+                            </div><!--fim card-->
+                        </div><!--fim col 1-->
+
+                        <div class="col-2">
+                            <div class="card">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bHwIzQrbJKiFwArLLngS1Ej6xPc.jpg" class="card-img-top" alt="capa do filme O Bom, O Mau e o Vilão (1966) ">
+                                <div class="card-body">
+                                  <h5 class="card-title">O Bom, O Mau e o Vilão (1966)</h5>
+                                  <a href="/filmes/americanos/O_Bom_O_Mau_e_o_Vilao.html" class="btn btn-outline-gold w-100">Saiba mais</a>
+                                </div>
+                            </div><!--fim card-->
+                        </div><!--fim col 2-->
+
+                        <div class="col-2">
+                            <div class="card">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bHwIzQrbJKiFwArLLngS1Ej6xPc.jpg" class="card-img-top" alt="capa do filme O Bom, O Mau e o Vilão (1966) ">
+                                <div class="card-body">
+                                  <h5 class="card-title">O Bom, O Mau e o Vilão (1966)</h5>
+                                  <a href="/filmes/americanos/O_Bom_O_Mau_e_o_Vilao.html" class="btn btn-outline-gold w-100">Saiba mais</a>
+                                </div>
+                            </div><!--fim card-->
+                        </div><!--fim col 3-->
+
+                        <div class="col-2">
+                            <div class="card">
+                                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bHwIzQrbJKiFwArLLngS1Ej6xPc.jpg" class="card-img-top" alt="capa do filme O Bom, O Mau e o Vilão (1966) ">
+                                <div class="card-body">
+                                  <h5 class="card-title">O Bom, O Mau e o Vilão (1966)</h5>
+                                  <a href="/filmes/americanos/O_Bom_O_Mau_e_o_Vilao.html" class="btn btn-outline-gold w-100">Saiba mais</a>
+                                </div>
+                            </div><!--fim card-->
+                        </div><!--fim col 4-->
+
+                    </div><!--Fim filmes americanos-->
+
+                    <div class="row mt-1">
+                        <h2 class="display-6">Filmes brasileiros</h2>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div><!--Fim filmes brasileiros-->
+
+                    <div class="row mt-1">
+                        <h2 class="display-6">Séries</h2>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div><!--Fim séries-->
+
+                    <div class="row mt-1">
+                        <h2 class="display-6">Animes</h2>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div><!--Fim séries animes-->
+
+                </div><!--Fim col-9 conteúdo-->
+
+            </div>
+        </div>
+
         <script 
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
